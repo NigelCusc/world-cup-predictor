@@ -12,7 +12,7 @@ This project involves **data scraping, data cleaning, predictive modeling, and k
 
 🔹 **Scraped Data**: Extracted historical World Cup match results from **Wikipedia (1930-2022)**  
 🔹 **Data Cleaning & Structuring**: Processed and formatted data into a structured dataset  
-🔹 **Fixture Generation**: Created possible **2026 group-stage fixtures**  
+🔹 **Fixture Scraping**: Fetches the full **2026 match schedule (104 fixtures)** from Wikipedia  
 🔹 **Match Predictions**: Trained ML models to **predict match outcomes (home & away goals)**  
 🔹 **Knockout Simulation**: Simulated each stage, determining the **winner of the tournament**  
 🔹 **Data Export**: Outputs match predictions & tournament standings in CSV format  
@@ -36,9 +36,29 @@ This project involves **data scraping, data cleaning, predictive modeling, and k
 - Extracts **FIFA World Cup match history (1930-2022)** from Wikipedia  
 - Cleans and structures data into a usable format  
 
-### 2️⃣ Fixture Generation  
-- Generates **possible 2026 group-stage fixtures**  
-- Saves to `fixtures_2026.csv`  
+Refresh historical match data from Wikipedia:
+
+```bash
+source .venv/bin/activate
+python scripts/scrape_historical_matches.py
+```
+
+Outputs `Data/fifa_worldcup_historical_data.csv` (raw) and `Data/clean_fifa_worldcup_matches.csv` (cleaned).
+
+### 2️⃣ 2026 Fixtures  
+- Scrapes the official Wikipedia schedule for **2026 FIFA World Cup** (group stage + knockout)  
+- Saves to `Data/clean_fifa_worldcup_fixture.csv`  
+
+Refresh 2026 fixtures from Wikipedia:
+
+```bash
+source .venv/bin/activate
+python scripts/scrape_fixtures_2026.py
+```
+
+All scraped CSVs and notebook outputs live under `Data/`.
+
+For 2026 **group standings tables** (not match fixtures), run `Table_Extraction.ipynb` → `Data/group_standings_2026.pkl`.
 
 ### 3️⃣ Machine Learning Model Training  
 - **Encodes team strengths**  

@@ -1,0 +1,105 @@
+HomeTeam,score,AwayTeam,year,HomeTeamEncoded,AwayTeamEncoded,PredictedHomeGoals,PredictedAwayGoals,Winner
+Mexico,Match 1,South Africa,2026,40,64,1,1,Draw
+South Korea,Match 2,Czech Republic,2026,65,18,3,1,South Korea
+Czech Republic,Match 25,South Africa,2026,18,64,1,1,Draw
+Mexico,Match 28,South Korea,2026,40,65,2,0,Mexico
+Czech Republic,Match 53,Mexico,2026,18,40,1,2,Mexico
+South Africa,Match 54,South Korea,2026,64,65,1,1,Draw
+Canada,Match 3,Bosnia and Herzegovina,2026,11,7,1,2,Bosnia and Herzegovina
+Qatar,Match 8,Switzerland,2026,53,69,3,2,Qatar
+Switzerland,Match 26,Bosnia and Herzegovina,2026,69,7,1,1,Draw
+Canada,Match 27,Qatar,2026,11,53,2,2,Draw
+Switzerland,Match 51,Canada,2026,69,11,1,0,Switzerland
+Bosnia and Herzegovina,Match 52,Qatar,2026,7,53,3,2,Bosnia and Herzegovina
+Brazil,Match 7,Morocco,2026,8,41,1,1,Draw
+Haiti,Match 5,Scotland,2026,30,58,2,3,Scotland
+Scotland,Match 30,Morocco,2026,58,41,1,3,Morocco
+Brazil,Match 29,Haiti,2026,8,30,3,0,Brazil
+Scotland,Match 49,Brazil,2026,58,8,0,1,Brazil
+Morocco,Match 50,Haiti,2026,41,30,1,0,Morocco
+United States,Match 4,Paraguay,2026,76,49,3,0,United States
+Australia,Match 6,Turkey,2026,3,73,3,2,Australia
+United States,Match 32,Australia,2026,76,3,2,1,United States
+Turkey,Match 31,Paraguay,2026,73,49,4,0,Turkey
+Turkey,Match 59,United States,2026,73,76,3,0,Turkey
+Paraguay,Match 60,Australia,2026,49,3,1,1,Draw
+Germany,Match 10,Curaçao,2026,27,-1,3,1,Germany
+Ivory Coast,Match 9,Ecuador,2026,37,22,2,1,Ivory Coast
+Germany,Match 33,Ivory Coast,2026,27,37,1,2,Ivory Coast
+Ecuador,Match 34,Curaçao,2026,22,-1,1,0,Ecuador
+Curaçao,Match 55,Ivory Coast,2026,-1,37,1,1,Draw
+Ecuador,Match 56,Germany,2026,22,27,1,0,Ecuador
+Netherlands,Match 11,Japan,2026,42,39,2,2,Draw
+Sweden,Match 12,Tunisia,2026,68,72,2,0,Sweden
+Netherlands,Match 35,Sweden,2026,42,68,1,2,Sweden
+Tunisia,Match 36,Japan,2026,72,39,1,2,Japan
+Japan,Match 57,Sweden,2026,39,68,1,1,Draw
+Tunisia,Match 58,Netherlands,2026,72,42,3,2,Tunisia
+Belgium,Match 16,Egypt,2026,5,23,2,2,Draw
+Iran,Match 15,New Zealand,2026,34,43,0,1,New Zealand
+Belgium,Match 39,Iran,2026,5,34,2,1,Belgium
+New Zealand,Match 40,Egypt,2026,43,23,1,1,Draw
+Egypt,Match 63,Iran,2026,23,34,3,1,Egypt
+New Zealand,Match 64,Belgium,2026,43,5,2,1,New Zealand
+Spain,Match 14,Cape Verde,2026,67,-1,2,0,Spain
+Saudi Arabia,Match 13,Uruguay,2026,57,77,0,1,Uruguay
+Spain,Match 38,Saudi Arabia,2026,67,57,2,1,Spain
+Uruguay,Match 37,Cape Verde,2026,77,-1,2,0,Uruguay
+Cape Verde,Match 65,Saudi Arabia,2026,-1,57,1,2,Saudi Arabia
+Uruguay,Match 66,Spain,2026,77,67,1,1,Draw
+France,Match 17,Senegal,2026,26,59,1,1,Draw
+Iraq,Match 18,Norway,2026,35,47,0,0,Draw
+France,Match 42,Iraq,2026,26,35,2,1,France
+Norway,Match 41,Senegal,2026,47,59,2,2,Draw
+Norway,Match 61,France,2026,47,26,2,1,Norway
+Senegal,Match 62,Iraq,2026,59,35,1,1,Draw
+Argentina,Match 19,Algeria,2026,2,0,1,0,Argentina
+Austria,Match 20,Jordan,2026,4,-1,2,0,Austria
+Argentina,Match 43,Austria,2026,2,4,1,0,Argentina
+Jordan,Match 44,Algeria,2026,-1,0,1,1,Draw
+Algeria,Match 69,Austria,2026,0,4,0,2,Austria
+Jordan,Match 70,Argentina,2026,-1,2,1,1,Draw
+Portugal,Match 23,DR Congo,2026,52,-1,3,1,Portugal
+Uzbekistan,Match 24,Colombia,2026,-1,14,2,2,Draw
+Portugal,Match 47,Uzbekistan,2026,52,-1,3,1,Portugal
+Colombia,Match 48,DR Congo,2026,14,-1,2,1,Colombia
+Colombia,Match 71,Portugal,2026,14,52,2,2,Draw
+DR Congo,Match 72,Uzbekistan,2026,-1,-1,1,1,Draw
+England,Match 22,Croatia,2026,24,16,1,0,England
+Ghana,Match 21,Panama,2026,28,48,2,1,Ghana
+England,Match 45,Ghana,2026,24,28,2,1,England
+Panama,Match 46,Croatia,2026,48,16,0,1,Croatia
+Panama,Match 67,England,2026,48,24,1,1,Draw
+Croatia,Match 68,Ghana,2026,16,28,1,2,Ghana
+Runner-up Group A,Match 73,Runner-up Group B,2026,-1,-1,1,1,Draw
+Winner Group C,Match 76,Runner-up Group F,2026,-1,-1,1,1,Draw
+Winner Group E,Match 74,3rd Group A/B/C/D/F,2026,-1,-1,1,1,Draw
+Winner Group F,Match 75,Runner-up Group C,2026,-1,-1,1,1,Draw
+Runner-up Group E,Match 78,Runner-up Group I,2026,-1,-1,1,1,Draw
+Winner Group I,Match 77,3rd Group C/D/F/G/H,2026,-1,-1,1,1,Draw
+Winner Group A,Match 79,3rd Group C/E/F/H/I,2026,-1,-1,1,1,Draw
+Winner Group L,Match 80,3rd Group E/H/I/J/K,2026,-1,-1,1,1,Draw
+Winner Group G,Match 82,3rd Group A/E/H/I/J,2026,-1,-1,1,1,Draw
+Winner Group D,Match 81,3rd Group B/E/F/I/J,2026,-1,-1,1,1,Draw
+Winner Group H,Match 84,Runner-up Group J,2026,-1,-1,1,1,Draw
+Runner-up Group K,Match 83,Runner-up Group L,2026,-1,-1,1,1,Draw
+Winner Group B,Match 85,3rd Group E/F/G/I/J,2026,-1,-1,1,1,Draw
+Runner-up Group D,Match 88,Runner-up Group G,2026,-1,-1,1,1,Draw
+Winner Group J,Match 86,Runner-up Group H,2026,-1,-1,1,1,Draw
+Winner Group K,Match 87,3rd Group D/E/I/J/L,2026,-1,-1,1,1,Draw
+Winner Match 73,Match 90,Winner Match 75,2026,-1,-1,1,1,Draw
+Winner Match 74,Match 89,Winner Match 77,2026,-1,-1,1,1,Draw
+Winner Match 76,Match 91,Winner Match 78,2026,-1,-1,1,1,Draw
+Winner Match 79,Match 92,Winner Match 80,2026,-1,-1,1,1,Draw
+Winner Match 83,Match 93,Winner Match 84,2026,-1,-1,1,1,Draw
+Winner Match 81,Match 94,Winner Match 82,2026,-1,-1,1,1,Draw
+Winner Match 86,Match 95,Winner Match 88,2026,-1,-1,1,1,Draw
+Winner Match 85,Match 96,Winner Match 87,2026,-1,-1,1,1,Draw
+Winner Match 89,Match 97,Winner Match 90,2026,-1,-1,1,1,Draw
+Winner Match 93,Match 98,Winner Match 94,2026,-1,-1,1,1,Draw
+Winner Match 91,Match 99,Winner Match 92,2026,-1,-1,1,1,Draw
+Winner Match 95,Match 100,Winner Match 96,2026,-1,-1,1,1,Draw
+Winner Match 97,Match 101,Winner Match 98,2026,-1,-1,1,1,Draw
+Winner Match 99,Match 102,Winner Match 100,2026,-1,-1,1,1,Draw
+Loser Match 101,Match 103,Loser Match 102,2026,-1,-1,1,1,Draw
+Winner Match 101,Match 104,Winner Match 102,2026,-1,-1,1,1,Draw

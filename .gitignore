@@ -1,0 +1,11 @@
+.venv/
+__pycache__/
+*.py[cod]
+.ipynb_checkpoints/
+
+# Notebook outputs at project root (use Data/ instead)
+/*.csv
+/*.pkl
+
+# Trained models (regenerate via Prediction 2026 fifa Scores.ipynb)
+models/
