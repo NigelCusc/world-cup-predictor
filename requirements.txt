@@ -7,3 +7,5 @@ lxml
 requests
 jupyter
 ipykernel
+matplotlib
+requests

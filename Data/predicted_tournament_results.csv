@@ -1,16 +1,16 @@
 Round,Team1,Team2,Predicted Goals Team1,Predicted Goals Team2,Winner
-Round of 16,Brazil,Portugal,3.1445555555555553,1.6758253968253973,Brazil
-Round of 16,Mexico,Morocco,1.375,1.4335,Morocco
-Round of 16,Sweden,Spain,2.435,0.7033333333333333,Sweden
-Round of 16,Uruguay,Bosnia and Herzegovina,5.34,0.3,Uruguay
-Round of 16,Ivory Coast,New Zealand,1.4,1.155,Ivory Coast
-Round of 16,Argentina,England,1.9475,1.3571666666666666,Argentina
-Round of 16,Turkey,Austria,1.69,0.77,Turkey
-Round of 16,United States,Ecuador,1.18,1.64,Ecuador
-Quarterfinals,Brazil,Morocco,1.4984007936507937,0.514,Brazil
-Quarterfinals,Sweden,Uruguay,2.2883333333333336,0.18,Sweden
-Quarterfinals,Ivory Coast,Argentina,1.1321666666666668,1.0366666666666666,Ivory Coast
-Quarterfinals,Turkey,Ecuador,1.71,1.53,Turkey
-Semifinals,Brazil,Sweden,2.8201507936507944,1.4781349206349208,Brazil
-Semifinals,Ivory Coast,Turkey,2.8757142857142863,0.6876190476190476,Ivory Coast
-Final,Brazil,Ivory Coast,2.2255555555555553,0.7623333333333332,Brazil
+Round of 16,Spain,Portugal,1.86,0.85,Spain
+Round of 16,Switzerland,Brazil,1.21,1.19,Switzerland
+Round of 16,Germany,Belgium,1.78,0.91,Germany
+Round of 16,England,France,1.27,1.23,England
+Round of 16,United States,Netherlands,1.03,1.88,Netherlands
+Round of 16,Argentina,Morocco,1.58,1.31,Argentina
+Round of 16,Iran,Uruguay,0.75,1.5,Uruguay
+Round of 16,South Korea,Turkey,1.0,1.28,Turkey
+Quarterfinals,Spain,Switzerland,2.64,0.73,Spain
+Quarterfinals,Germany,England,1.37,1.4,England
+Quarterfinals,Netherlands,Argentina,1.79,1.4,Netherlands
+Quarterfinals,Uruguay,Turkey,1.73,1.58,Uruguay
+Semifinals,Spain,England,1.77,1.71,Spain
+Semifinals,Netherlands,Uruguay,2.26,0.79,Netherlands
+Final,Spain,Netherlands,2.2,1.11,Spain

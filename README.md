@@ -43,7 +43,7 @@ source .venv/bin/activate
 python scripts/scrape_historical_matches.py
 ```
 
-Outputs `Data/fifa_worldcup_historical_data.csv` (raw) and `Data/clean_fifa_worldcup_matches.csv` (cleaned).
+Outputs `Data/fifa_worldcup_historical_data.csv` (raw) and `Data/clean_fifa_worldcup_matches.csv` (cleaned + Kaggle pre-tournament features for home/away). Downloads [harrachimustapha/fifa-world-cup-team-dataset](https://www.kaggle.com/datasets/harrachimustapha/fifa-world-cup-team-dataset) when missing. Use `--skip-kaggle` to omit enrichment.
 
 ### 2️⃣ 2026 Fixtures  
 - Scrapes the official Wikipedia schedule for **2026 FIFA World Cup** (group stage + knockout)  

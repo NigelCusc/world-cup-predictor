@@ -4,12 +4,25 @@
 from __future__ import annotations
 
 import argparse
+import sys
 import time
 from pathlib import Path
 
 import pandas as pd
 import requests
 from bs4 import BeautifulSoup
+
+_SCRIPT_DIR = Path(__file__).resolve().parent
+if str(_SCRIPT_DIR) not in sys.path:
+    sys.path.insert(0, str(_SCRIPT_DIR))
+
+from kaggle_team_features import (  # noqa: E402
+    MIN_YEAR_WITH_KAGGLE,
+    default_kaggle_dir,
+    enrich_matches,
+    ensure_kaggle_dataset,
+    training_matches,
+)
 
 WORLD_CUP_YEARS = [
     1930, 1934, 1938, 1950, 1954, 1958, 1962, 1966, 1970,
@@ -110,11 +123,37 @@ def clean_matches(raw_df: pd.DataFrame) -> pd.DataFrame:
     return df
 
 
-def write_outputs(raw_df: pd.DataFrame, clean_df: pd.DataFrame, output_dir: Path) -> None:
+def enrich_with_kaggle_features(
+    clean_df: pd.DataFrame, kaggle_dir: Path, download: bool = True
+) -> pd.DataFrame:
+    if download:
+        ensure_kaggle_dataset(kaggle_dir)
+    enriched = enrich_matches(clean_df, kaggle_dir=kaggle_dir)
+    trainable = training_matches(enriched)
+    print(
+        f"Kaggle features: {len(trainable)} matches from {MIN_YEAR_WITH_KAGGLE}+ "
+        f"with complete home/away stats"
+    )
+    return enriched
+
+
+def write_outputs(
+    raw_df: pd.DataFrame,
+    clean_df: pd.DataFrame,
+    output_dir: Path,
+    *,
+    skip_kaggle: bool = False,
+    kaggle_dir: Path | None = None,
+) -> None:
     output_dir.mkdir(parents=True, exist_ok=True)
     raw_path = output_dir / "fifa_worldcup_historical_data.csv"
     clean_path = output_dir / "clean_fifa_worldcup_matches.csv"
     raw_df.to_csv(raw_path, index=False)
+
+    if not skip_kaggle:
+        kaggle_dir = kaggle_dir or default_kaggle_dir(output_dir.parent)
+        clean_df = enrich_with_kaggle_features(clean_df, kaggle_dir)
+
     clean_df.to_csv(clean_path, index=False)
     print(f"Wrote raw data ({len(raw_df)} rows) to {raw_path}")
     print(f"Wrote cleaned data ({len(clean_df)} rows) to {clean_path}")
@@ -137,6 +176,17 @@ def parse_args() -> argparse.Namespace:
         default=REQUEST_DELAY_SECONDS,
         help="Delay between tournament requests in seconds.",
     )
+    parser.add_argument(
+        "--skip-kaggle",
+        action="store_true",
+        help="Do not merge Kaggle pre-tournament team features into the clean CSV.",
+    )
+    parser.add_argument(
+        "--kaggle-dir",
+        type=Path,
+        default=None,
+        help="Directory for train.csv / test.csv (default: Data/kaggle_fifa_world_cup_team_dataset).",
+    )
     return parser.parse_args()
 
 
@@ -144,7 +194,13 @@ def main() -> None:
     args = parse_args()
     raw_df = scrape_all_years(delay_seconds=args.delay)
     clean_df = clean_matches(raw_df)
-    write_outputs(raw_df, clean_df, args.output_dir)
+    write_outputs(
+        raw_df,
+        clean_df,
+        args.output_dir,
+        skip_kaggle=args.skip_kaggle,
+        kaggle_dir=args.kaggle_dir,
+    )
 
 
 if __name__ == "__main__":
