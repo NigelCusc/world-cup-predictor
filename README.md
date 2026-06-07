@@ -58,20 +58,44 @@ python scripts/scrape_fixtures_2026.py
 
 All scraped CSVs and notebook outputs live under `Data/`.
 
-For 2026 **group standings tables** (not match fixtures), run `Table_Extraction.ipynb` → `Data/group_standings_2026.pkl`.
+For 2026 **group membership** (teams A–L), run `Table_Extraction.ipynb` → `Data/group_standings_2026.pkl`.
 
 ### 3️⃣ Machine Learning Model Training  
 - **Encodes team strengths**  
 - Trains **ML models** to predict **home & away goals**  
 - Uses **Random Forest Regressor** for score prediction  
 
-### 4️⃣ Tournament Simulation  
-- Predicts **group stage results**  
-- Simulates **knockout rounds** (Round of 16, Quarterfinals, Semifinals, Final)  
-- Determines **FIFA World Cup 2026 Champion** 🏆  
+### 4️⃣ Tournament Simulation (48-team format)
 
-### 5️⃣ Data Export  
-- Saves all results, including **match predictions & tournament standings**  
+The 2026 tournament uses an expanded format:
+
+| Phase | Details |
+|-------|---------|
+| Group stage | **12 groups of 4** → 72 matches |
+| Qualification | Top 2 per group (24) + **8 best third-placed** teams → **32** advance |
+| Knockout | **Round of 32** → Round of 16 → QFs → SFs → **Third place** → Final |
+| Total | **104 matches** |
+
+The main notebook (`Fifa_worldcup2026_TournamentPrediction.ipynb`):
+
+- Predicts **72 group-stage** results only
+- Builds **per-group standings** and applies FIFA qualification rules
+- Simulates the **official Wikipedia knockout bracket** via `scripts/tournament_2026.py`
+
+Knockout rounds: **Round of 32, Round of 16, Quarterfinals, Semifinals, Third place, Final**.
+
+> Third-place bracket slots use eligible-group lists from the scraped fixtures. FIFA's full Annex C mapping for all 495 third-place combinations is not modelled.
+
+### 5️⃣ View results
+
+Open `Display_2026_Predictions.ipynb` after running the tournament prediction notebook. It shows group-stage match scores, qualification tables, knockout match lists, and a bracket graphic.
+
+### 6️⃣ Data Export  
+- `Data/fifa_worldcup_2026_predictions.csv` — group-stage predictions  
+- `Data/fifa_worldcup_2026_standings.csv` — qualification summary (48 teams)  
+- `Data/fifa_worldcup_2026_group_tables.csv` — per-group tables  
+- `Data/predicted_tournament_results.csv` — all 32 knockout matches  
+- `Data/final_tournament_standings.csv` — elimination round per team  
 
 ---
 ## 🤝 Contributing
@@ -79,7 +103,7 @@ Want to improve the model or add new features? Feel free to fork & contribute!
 
 🔹 Improve ML accuracy with advanced models
 🔹 Add expected goals (xG) analysis
-🔹 Optimize knockout stage simulation
+🔹 Implement full FIFA Annex C third-place bracket mapping
 ---
 📜 License
 This project is open-source!
