@@ -4,12 +4,19 @@ from __future__ import annotations
 
 import pickle
 import re
+import sys
 from collections.abc import Callable
 from pathlib import Path
 from typing import Any
 
 import numpy as np
 import pandas as pd
+
+_PROJECT_ROOT = Path(__file__).resolve().parents[1]
+if str(_PROJECT_ROOT) not in sys.path:
+    sys.path.insert(0, str(_PROJECT_ROOT))
+
+from config import resolve_coming_home_knockout
 
 GROUP_LETTERS = list("ABCDEFGHIJKL")
 NUM_GROUPS = len(GROUP_LETTERS)
@@ -372,6 +379,7 @@ def simulate_knockout_bracket(
     home_col: str | None = None,
     away_col: str | None = None,
     score_col: str | None = None,
+    its_coming_home: bool | None = None,
 ) -> tuple[pd.DataFrame, pd.DataFrame, str]:
     """
     Play out the official Wikipedia knockout bracket (Matches 73–104).
@@ -410,13 +418,10 @@ def simulate_knockout_bracket(
         )
 
         home_goals, away_goals = predict_match(home_team, away_team)
-        if home_goals > away_goals:
-            winner, loser = home_team, away_team
-        elif away_goals > home_goals:
-            winner, loser = away_team, home_team
-        else:
-            winner = str(rng.choice([home_team, away_team]))
-            loser = away_team if winner == home_team else home_team
+        winner, loser, home_goals, away_goals, decided_by = resolve_coming_home_knockout(
+            home_team, away_team, home_goals, away_goals, rng,
+            its_coming_home=its_coming_home,
+        )
 
         match_results[match_no] = {"winner": winner, "loser": loser}
         tournament_rows.append(
@@ -428,6 +433,7 @@ def simulate_knockout_bracket(
                 "Predicted Goals Team1": home_goals,
                 "Predicted Goals Team2": away_goals,
                 "Winner": winner,
+                "DecidedBy": decided_by or "",
             }
         )
         if round_name == "Final":

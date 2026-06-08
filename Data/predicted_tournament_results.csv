@@ -1,33 +1,33 @@
-Match,Round,Team1,Team2,Predicted Goals Team1,Predicted Goals Team2,Winner
-73,Round of 32,Czech Republic,Bosnia and Herzegovina,1.81,1.4,Czech Republic
-74,Round of 32,Germany,Canada,2.39,0.92,Germany
-75,Round of 32,Netherlands,Morocco,1.85,1.13,Netherlands
-76,Round of 32,Brazil,Japan,1.77,1.32,Brazil
-77,Round of 32,France,Sweden,1.54,0.75,France
-78,Round of 32,Ecuador,Norway,1.16,1.46,Norway
-79,Round of 32,South Korea,Senegal,0.96,1.42,Senegal
-80,Round of 32,England,DR Congo,2.47,1.02,England
-81,Round of 32,United States,Austria,1.34,1.215,United States
-82,Round of 32,Belgium,Mexico,1.86,0.88,Belgium
-83,Round of 32,Colombia,Croatia,1.24,1.51,Croatia
-84,Round of 32,Spain,Algeria,2.36,0.87,Spain
-85,Round of 32,Switzerland,Ivory Coast,1.34,1.59,Ivory Coast
-86,Round of 32,Argentina,Uruguay,1.91,1.16,Argentina
-87,Round of 32,Portugal,Ghana,2.87,1.23,Portugal
-88,Round of 32,Turkey,Iran,2.29,1.28,Turkey
-89,Round of 16,Germany,France,1.43,1.44,France
-90,Round of 16,Czech Republic,Netherlands,0.7,0.92,Netherlands
-91,Round of 16,Brazil,Norway,1.95,0.89,Brazil
-92,Round of 16,Senegal,England,1.5,1.06,Senegal
-93,Round of 16,Croatia,Spain,0.94,0.98,Spain
-94,Round of 16,United States,Belgium,1.01,1.85,Belgium
-95,Round of 16,Argentina,Turkey,1.896666666666667,0.7566666666666666,Argentina
-96,Round of 16,Ivory Coast,Portugal,0.9,1.05,Portugal
-97,Quarterfinals,France,Netherlands,1.78,1.0,France
-98,Quarterfinals,Spain,Belgium,2.55,0.79,Spain
-99,Quarterfinals,Brazil,Senegal,1.98,1.11,Brazil
-100,Quarterfinals,Argentina,Portugal,1.87,1.93,Portugal
-101,Semifinals,France,Spain,1.33,1.24,France
-102,Semifinals,Brazil,Portugal,1.44,1.09,Brazil
-103,Third place,Spain,Portugal,1.86,0.85,Spain
-104,Final,France,Brazil,1.96,1.11,France
+Match,Round,Team1,Team2,Predicted Goals Team1,Predicted Goals Team2,Winner,DecidedBy
+73,Round of 32,Czech Republic,Bosnia and Herzegovina,1.81,1.4,Czech Republic,
+74,Round of 32,Germany,Canada,2.39,0.92,Germany,
+75,Round of 32,Netherlands,Morocco,1.85,1.13,Netherlands,
+76,Round of 32,Brazil,Japan,1.77,1.32,Brazil,
+77,Round of 32,France,Sweden,1.54,0.75,France,
+78,Round of 32,Ecuador,Norway,1.16,1.46,Norway,
+79,Round of 32,South Korea,Senegal,0.96,1.42,Senegal,
+80,Round of 32,England,DR Congo,2.47,1.02,England,
+81,Round of 32,United States,Austria,1.34,1.215,United States,
+82,Round of 32,Belgium,Mexico,1.86,0.88,Belgium,
+83,Round of 32,Colombia,Croatia,1.24,1.51,Croatia,
+84,Round of 32,Spain,Algeria,2.36,0.87,Spain,
+85,Round of 32,Switzerland,Ivory Coast,1.34,1.59,Ivory Coast,
+86,Round of 32,Argentina,Uruguay,1.91,1.16,Argentina,
+87,Round of 32,Portugal,Ghana,2.87,1.23,Portugal,
+88,Round of 32,Turkey,Iran,2.29,1.28,Turkey,
+89,Round of 16,Germany,France,1.43,1.44,France,
+90,Round of 16,Czech Republic,Netherlands,0.7,0.92,Netherlands,
+91,Round of 16,Brazil,Norway,1.95,0.89,Brazil,
+92,Round of 16,Senegal,England,1.5,1.5,England,Penalties
+93,Round of 16,Croatia,Spain,0.94,0.98,Spain,
+94,Round of 16,United States,Belgium,1.01,1.85,Belgium,
+95,Round of 16,Argentina,Turkey,1.896666666666667,0.7566666666666666,Argentina,
+96,Round of 16,Ivory Coast,Portugal,0.9,1.05,Portugal,
+97,Quarterfinals,France,Netherlands,1.78,1.0,France,
+98,Quarterfinals,Spain,Belgium,2.55,0.79,Spain,
+99,Quarterfinals,Brazil,England,1.48,1.48,England,Penalties
+100,Quarterfinals,Argentina,Portugal,1.87,1.93,Portugal,
+101,Semifinals,France,Spain,1.33,1.24,France,
+102,Semifinals,England,Portugal,1.9,0.93,England,
+103,Third place,Spain,Portugal,1.86,0.85,Spain,
+104,Final,France,England,1.47,1.47,England,Penalties
